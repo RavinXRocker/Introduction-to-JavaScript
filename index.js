@@ -98,7 +98,7 @@ function dogYears(age){
   return age * 7;
 }
 
-// console.log('task 2', dogYears(31));
+console.log('task 2', dogYears(31));
 
 
 
@@ -130,7 +130,7 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 */  
 
 function hungryDog(weight, age){
-  if(age <= 1 && weight <=5){
+  if(age >= 1 && weight <=5){
     return weight * 0.05;
   }else if(age >= 1 && weight >= 6 && weight <= 10){
     return weight * 0.04;
@@ -139,16 +139,17 @@ function hungryDog(weight, age){
   }else if(age >= 1 && weight > 15){
     return weight * 0.02;
   }else if(age < 1 && age >= 0.583){
-    return weight * 0.04
+    return weight * 0.04;
   }else if (age < 0,583 && age >= 0,333){
     return weight * 0.05;
   }else if(age < 0.333){
-    return weight * 0.1;
-  }else{
+    return weight * 0.10;
+  }
+  else{
     return 'please try again';
   }
 }
-// console.log('task 3', hungryDog(15, 1));
+console.log('task 3', hungryDog(15, 1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -191,7 +192,7 @@ function game(user, computer){
   }else if(user === 'scissor' && computer === 'paper'){
     return `you win!`;
   }else{
-    return `you lose`;
+    return `you lose!`;
   }
 }
 
@@ -267,13 +268,13 @@ function grade(number){
 if (number >= 90){
   return `you got an A`;
 }else if(number < 90 && number >= 80){
-  return `you got a b`;
+  return `you got a B`;
 }else if(number <80 && number >= 70 ){
   return `you got a C`;
 }else if(number < 70 && number >= 60){
   return  `you got a D`;
 }else if(number < 60){
-  return `you got a F`;
+  return `you got an F`;
 }
 }
 
